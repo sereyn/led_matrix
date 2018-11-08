@@ -46,9 +46,15 @@ void Screen::init(int intensity){
 	}
 }
 
+void Screen::clear(){
+  for(int i=0; i<this->nbPads; i++){
+    this->pads[i].clear();
+  }
+}
+
 void Screen::setLed(int x, int y, bool value){
 	int padIndex = y/8;
-	this->pads[padIndex].setLed(x, y%8, value);
+	this->pads[padIndex].setLed(32-x, y%8, value);
 }
 
 void Screen::line(int x1, int y1, int x2, int y2){

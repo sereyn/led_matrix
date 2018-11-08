@@ -8,16 +8,6 @@ void setup(){
 }
 
 void loop(){
-  for(int x=0; x<32; x++){
-    /*int y1 = cos(x/2)*10+10;
-    int y2 = cos((x+1)/2)*10+10;
-    int y1 = (x-16)/2*(x-16)/2;
-    int y2 = (x-15)/2*(x-15)/2;*/
-    if(x != 0 && (x+1) != 0){
-      int y1 = 1/x;
-      int y2 = 1/(x+1);
-      myScreen.line(x, y1, x+1, y2); 
-    }
-  }
-	
+myScreen.setLed(12,6, true);myScreen.setLed(16,6, true);myScreen.setLed(12,7, true);myScreen.setLed(16,7, true);myScreen.setLed(12,8, true);myScreen.setLed(16,8, true);myScreen.setLed(12,9, true);myScreen.setLed(16,9, true);myScreen.setLed(12,10, true);myScreen.setLed(16,10, true);myScreen.setLed(8,13, true);myScreen.setLed(21,13, true);myScreen.setLed(8,14, true);myScreen.setLed(9,14, true);myScreen.setLed(20,14, true);myScreen.setLed(9,15, true);myScreen.setLed(10,15, true);myScreen.setLed(19,15, true);myScreen.setLed(20,15, true);myScreen.setLed(11,16, true);myScreen.setLed(12,16, true);myScreen.setLed(13,16, true);myScreen.setLed(17,16, true);myScreen.setLed(18,16, true);myScreen.setLed(19,16, true);myScreen.setLed(13,17, true);myScreen.setLed(14,17, true);myScreen.setLed(15,17, true);myScreen.setLed(16,17, true);myScreen.setLed(17,17, true);
 }
+
